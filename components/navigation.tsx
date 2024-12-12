@@ -48,7 +48,7 @@ export function Navigation() {
         >
           <div className="container flex h-16 items-center justify-between px-4">
             <Link href="/" className="flex items-center space-x-2">
-              <Logo isDark={isHeroDark && !isScrolled} />
+              <Logo /> {/* Removed isDark prop since dark mode is handled by Tailwind */}
             </Link>
 
             <DesktopNav 
