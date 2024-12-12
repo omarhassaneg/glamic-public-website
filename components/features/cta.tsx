@@ -3,22 +3,22 @@ import { ArrowRight } from "lucide-react";
 
 export function FeaturesCTA() {
   return (
-    <section className="w-full py-20 bg-navy">
+    <section className="w-full py-20 bg-background dark:bg-navy">
       <div className="container px-4 md:px-6">
-        <div className="text-center space-y-6">
-          <h2 className="text-3xl font-bold text-white">
+        <div className="flex flex-col items-center text-center space-y-8 max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-navy dark:text-white">
             Experience the Future of Booking
           </h2>
-          <p className="text-white/70 max-w-2xl mx-auto">
+          <p className="text-navy/70 dark:text-white/70 text-lg max-w-2xl">
             Join us today for a free trial and transform your beauty business with Glamic!
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <Button className="bg-gold hover:bg-gold/90 text-white">
+          <div className="w-full">
+            <Button 
+              size="lg" 
+              className="w-full sm:w-auto bg-gold hover:bg-gold/90 text-white"
+            >
               Sign Up
               <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-            <Button variant="outline" className="border-white text-white hover:bg-white hover:text-navy">
-              Learn More
             </Button>
           </div>
         </div>
