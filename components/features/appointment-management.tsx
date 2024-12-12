@@ -30,15 +30,9 @@ export function AppointmentManagement() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button className="bg-navy hover:bg-navy/90 text-white dark:bg-white dark:hover:bg-white/90 dark:text-navy dark:hover:text-navy">
-                Learn More
-              </Button>
-              <Button 
-                variant="outline" 
-                className="border-gold text-gold hover:bg-gold hover:text-white dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-navy"
-              >
-                Sign Up
+            <div className="pt-4">
+              <Button className="w-full sm:w-auto bg-gold hover:bg-gold/90 text-white">
+                Get Started
               </Button>
             </div>
           </div>

@@ -1,12 +1,13 @@
 import { Check } from "lucide-react";
 
 const features = [
-  "Smart Booking - Manage appointments seamlessly",
-  "AI Assistance - Let our AI handle client communications",
-  "Custom Branding - Reflect your unique style",
-  "Analytics Dashboard - Track your business growth",
-  "Mobile-Friendly - Manage on the go",
-  "Automated Reminders - Reduce no-shows",
+  "Automated Scheduling - Effortlessly manage your time",
+  "Payment Processing - Secure and seamless transactions",
+  "Your Own Website - Showcase your brand with ease",
+  "SMS Appointment Reminders - Keep clients informed",
+  "Social Media Integration (Coming Soon) - Expand your reach",
+  "Industry Policies - Access ready-to-use templates",
+  "Provider Locator Tool - Help clients find you easily",
 ];
 
 export function CustomSolutions() {

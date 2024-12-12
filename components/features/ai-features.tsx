@@ -1,5 +1,25 @@
 import { Button } from "@/components/ui/button";
 import { MessageSquare, Clock } from "lucide-react";
+import { ChatWindow } from "@/components/chat/window";
+
+const demoMessages = [
+  {
+    type: "client" as const,
+    message: "Hi! Do you have any availability for a haircut this weekend?"
+  },
+  {
+    type: "ai" as const,
+    message: "Hello! I'd be happy to help you book a haircut. To ensure we allocate enough time, could you please let me know:\n\n1. What type of haircut you're looking for?\n2. If you'd like any additional services?\n\nThis helps us provide you with accurate timing and pricing! 💇‍♀️"
+  },
+  {
+    type: "client" as const,
+    message: "I'd like a women's haircut and blow dry"
+  },
+  {
+    type: "ai" as const,
+    message: "Perfect! For a women's haircut and blow dry, we have the following slots available this weekend:\n\nSaturday:\n- 10:00 AM\n- 2:30 PM\n\nSunday:\n- 11:30 AM\n- 3:00 PM\n\nThe service will be $65, and we require a $20 deposit to secure your booking. Which time works best for you? ✨"
+  }
+];
 
 export function AIFeatures() {
   return (
@@ -10,7 +30,7 @@ export function AIFeatures() {
             <div className="inline-block text-gold text-sm font-medium mb-2">Effortless</div>
             <h2 className="text-3xl font-bold">Streamline Your Communication with AI Agents</h2>
             <p className="text-white/70">
-              Our AI-powered agents are designed to handle all your client communications seamlessly. Whether it&apos;s Instagram, WhatsApp, text, or email, let our technology manage your conversations so you can focus on what you do best.
+              Our AI-powered agents are designed to handle all your client communications seamlessly. Whether it's Instagram, WhatsApp, text, or email, let our technology manage your conversations so you can focus on what you do best.
             </p>
             <div className="grid sm:grid-cols-2 gap-4 pt-4">
               <div className="flex items-start space-x-3">
@@ -35,7 +55,9 @@ export function AIFeatures() {
               </Button>
             </div>
           </div>
-          <div className="relative h-[400px] bg-gradient-to-br from-gold/20 to-navy rounded-lg" />
+          <div className="flex justify-center items-center">
+            <ChatWindow messages={demoMessages} />
+          </div>
         </div>
       </div>
     </section>
