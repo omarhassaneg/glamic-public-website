@@ -15,7 +15,7 @@ const testimonials = [
     name: "Jasmine",
     role: "Lash Technician",
     content: "I’ll admit, I wasn’t sure about trying another app, but Glamic totally surprised me. Setting up my custom website was crazy fast, and my clients can book, check my policies, and even sign forms without me lifting a finger. It’s made my life so much easier!",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop",
+    image: "https://groomee-storage.s3.us-east-2.amazonaws.com/https___replicate.delivery_czjl_C8eWiAP9CGx4GKcffdKERxatCvaC7Ctfb1enlmYbeu5MkIieJA_tmpg4j2d8lb+(1).jpg",
   },
   {
     name: "Amara",
