@@ -49,7 +49,7 @@ export function AIFeatures() {
               </div>
             </div>
             <div className="pt-4">
-              <Button className="w-full sm:w-auto bg-gold hover:bg-gold/90 text-white">
+              <Button className="w-full bg-gold hover:bg-gold/90 text-white">
                 Get Started
               </Button>
             </div>
