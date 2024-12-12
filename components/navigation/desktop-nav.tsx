@@ -14,7 +14,7 @@ interface DesktopNavProps {
 
 export function DesktopNav({ items, pathname, isHeroDark }: DesktopNavProps) {
   return (
-    <nav className="hidden md:flex items-center space-x-1 bg-background dark:bg-navy">
+    <nav className="hidden md:flex items-center space-x-1">
       {items.map((item) => (
         <Link
           key={item.name}
