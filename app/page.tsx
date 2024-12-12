@@ -1,5 +1,5 @@
 import { HeroSection } from "@/components/sections/hero";
-import { FeaturesSection } from "@/components/sections/features";
+import { AccordionList } from "@/components/ui/accordion-list";
 import { AICommunicationSection } from "@/components/sections/ai-communication";
 import { TestimonialsSection } from "@/components/sections/testimonials";
 import { HowItWorksSection } from "@/components/sections/how-it-works";
@@ -9,7 +9,11 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center">
       <HeroSection />
-      <FeaturesSection />
+      <section className="w-full py-20 bg-background dark:bg-navy">
+        <div className="container px-4 md:px-6">
+          <AccordionList />
+        </div>
+      </section>
       <AICommunicationSection />
       <TestimonialsSection />
       <HowItWorksSection />
