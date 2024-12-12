@@ -25,13 +25,6 @@ export function HeroSection() {
             >
               Get Started
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="w-full sm:w-auto border-gold text-gold hover:bg-gold hover:text-white dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-navy"
-            >
-              Learn More
-            </Button>
           </div>
         </div>
       </div>
