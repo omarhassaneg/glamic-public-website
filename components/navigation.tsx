@@ -2,11 +2,11 @@
 
 import * as React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { DesktopNav } from "./navigation/desktop-nav";
 import { MobileNav } from "./navigation/mobile-nav";
+import { Logo } from "./ui/logo";
 
 const navigationItems = [
   { name: "Features", href: "/features" },
@@ -40,27 +40,15 @@ export function Navigation() {
           className={cn(
             "rounded-full transition-all duration-300 backdrop-blur-sm",
             {
-              // Light hero pages
               "bg-offwhite/50 dark:bg-navy/50": isHeroLight && !isScrolled,
-              // Dark hero pages
               "bg-navy/50 dark:bg-navy/50": isHeroDark && !isScrolled,
-              // Default/scrolled state
               "bg-white/30 dark:bg-navy/30": isScrolled || (!isHeroLight && !isHeroDark),
             }
           )}
         >
           <div className="container flex h-16 items-center justify-between px-4">
             <Link href="/" className="flex items-center space-x-2">
-              <Image
-                src="https://groomee-storage.s3.us-east-2.amazonaws.com/logo+typography+Main+-+112840.png"
-                alt="Glamic Logo"
-                width={120}
-                height={40}
-                className={cn(
-                  "h-8 w-auto transition-all duration-300",
-                  (isHeroDark && !isScrolled) ? "brightness-0 invert" : "dark:brightness-0 dark:invert"
-                )}
-              />
+              <Logo isDark={isHeroDark && !isScrolled} />
             </Link>
 
             <DesktopNav 

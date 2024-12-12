@@ -41,22 +41,22 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section className="w-full py-20 bg-white">
+    <section className="w-full py-20 bg-background dark:bg-navy">
       <div className="container px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-navy mb-4">
+          <h2 className="text-3xl font-bold text-navy dark:text-white mb-4">
             Everything you need to run your business - at one low price!
           </h2>
-          <p className="text-navy/70 max-w-2xl mx-auto">
+          <p className="text-navy/70 dark:text-white/70 max-w-2xl mx-auto">
             Glamic offers a seamless solution for beauty professionals, streamlining their scheduling and booking processes.
           </p>
         </div>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
-            <Card key={index} className="p-6 text-center">
+            <Card key={index} className="p-6 text-center bg-white dark:bg-navy/50">
               <feature.icon className="w-12 h-12 mx-auto mb-4 text-gold" />
-              <h3 className="text-xl font-semibold text-navy mb-2">{feature.title}</h3>
-              <p className="text-navy/70">{feature.description}</p>
+              <h3 className="text-xl font-semibold text-navy dark:text-white mb-2">{feature.title}</h3>
+              <p className="text-navy/70 dark:text-white/70">{feature.description}</p>
             </Card>
           ))}
         </div>

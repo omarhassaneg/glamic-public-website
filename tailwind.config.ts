@@ -16,6 +16,9 @@ const config: Config = {
       },
     },
     extend: {
+      fontFamily: {
+        serif: ['Playfair Display', 'serif'],
+      },
       colors: {
         navy: '#112840',
         gold: '#957F5A',

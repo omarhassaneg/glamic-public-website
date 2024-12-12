@@ -1,31 +1,23 @@
 "use client";
 
-import { Mail, Phone, MapPin, Scissors, Facebook, Instagram, Twitter, Linkedin, Youtube } from "lucide-react";
+import { Instagram, Twitter, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
+import { Logo } from "@/components/ui/logo";
 
 const footerLinks = {
   resources: [
     { name: "Blog Posts", href: "/blog" },
-    { name: "Case Studies", href: "/case-studies" },
     { name: "FAQs", href: "/faqs" },
     { name: "Support Center", href: "/support" },
-  ],
-  connect: [
-    { name: "Newsletter", href: "#" },
-    { name: "Events", href: "/events" },
-    { name: "Webinars", href: "/webinars" },
-    { name: "Community", href: "/community" },
     { name: "Feedback", href: "/feedback" },
   ],
   follow: [
-    { name: "Facebook", href: "#", icon: Facebook },
     { name: "Instagram", href: "#", icon: Instagram },
-    { name: "Twitter", href: "#", icon: Twitter },
+    { name: "X", href: "#", icon: Twitter },
     { name: "LinkedIn", href: "#", icon: Linkedin },
-    { name: "YouTube", href: "#", icon: Youtube },
   ],
 };
 
@@ -35,12 +27,11 @@ export function Footer() {
   return (
     <footer className="border-t bg-navy">
       <div className="container py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Logo and Newsletter */}
-          <div className="lg:col-span-2">
+          <div>
             <Link href="/" className="flex items-center space-x-2 mb-6">
-              <Scissors className="h-6 w-6 text-gold" />
-              <span className="font-bold text-white">Glamic</span>
+              <Logo isDark={true} />
             </Link>
             <div className="space-y-4">
               <h3 className="text-lg font-semibold text-white">Subscribe to updates</h3>
@@ -63,28 +54,11 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Resources */}
+          {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold text-gold mb-4">Resources</h3>
+            <h3 className="text-lg font-semibold text-gold mb-4">Quick Links</h3>
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
-                <li key={link.name}>
-                  <Link 
-                    href={link.href}
-                    className="text-white/70 hover:text-white transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Connect */}
-          <div>
-            <h3 className="text-lg font-semibold text-gold mb-4">Connect With Us</h3>
-            <ul className="space-y-3">
-              {footerLinks.connect.map((link) => (
                 <li key={link.name}>
                   <Link 
                     href={link.href}

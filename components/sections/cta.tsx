@@ -10,22 +10,15 @@ export function CTASection() {
             Ready to Transform Your Business?
           </h2>
           <p className="text-[#112840]/70 text-lg max-w-2xl">
-            Join thousands of businesses that have already revolutionized their operations with our platform.
+            Join thousands of independent beauty service providers that have already revolutionized their operations with our platform.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="w-full">
             <Button 
               size="lg"
-              className="bg-[#957F5A] hover:bg-[#957F5A]/90 text-white"
+              className="w-full sm:w-auto bg-[#957F5A] hover:bg-[#957F5A]/90 text-white"
             >
-              Start Free Trial
+              Get Started
               <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-            <Button 
-              variant="outline"
-              size="lg"
-              className="border-[#112840] text-[#112840] hover:bg-[#112840] hover:text-white"
-            >
-              Schedule Demo
             </Button>
           </div>
         </div>
