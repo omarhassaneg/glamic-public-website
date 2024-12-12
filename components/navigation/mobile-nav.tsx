@@ -20,7 +20,7 @@ export function MobileNav({ items, pathname, isHeroDark }: MobileNavProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="md:hidden">
+    <div className="md:hidden bg-background dark:bg-navy">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <div className="flex items-center gap-2">
           <ThemeToggle isDark={isHeroDark} />
