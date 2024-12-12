@@ -17,7 +17,7 @@ export function FeaturesCTA() {
               size="lg" 
               className="w-full sm:w-auto bg-gold hover:bg-gold/90 text-white"
             >
-              Sign Up
+              Get Started
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>

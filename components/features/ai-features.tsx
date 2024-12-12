@@ -48,10 +48,9 @@ export function AIFeatures() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button className="bg-gold hover:bg-gold/90">Learn More</Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-navy">
-                Sign Up
+            <div className="pt-4">
+              <Button className="w-full sm:w-auto bg-gold hover:bg-gold/90 text-white">
+                Get Started
               </Button>
             </div>
           </div>
