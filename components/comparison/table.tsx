@@ -9,11 +9,11 @@ const features = [
     type: "price"
   },
   { name: "Website", glamic: "Included", alternatives: "$39" },
-  { name: "Website Booking addon", glamic: "Included", alternatives: "$19" },
-  { name: "Payment Processing addon", glamic: "Included", alternatives: "$10" },
-  { name: "SMS Reminders addon", glamic: "Included", alternatives: "Pay per use" },
-  { name: "Booking policies, collect waivers addon", glamic: "Included", alternatives: "$5" },
-  { name: "Automated Scheduling addon", glamic: "Included", alternatives: "$19" },
+  { name: "Website Booking add-on", glamic: "Included", alternatives: "$19" },
+  { name: "Payment Processing add-on", glamic: "Included", alternatives: "$10" },
+  { name: "SMS Reminders add-on", glamic: "Included", alternatives: "Pay per use" },
+  { name: "Booking policies, collect waivers add-on", glamic: "Included", alternatives: "$5" },
+  { name: "Automated Scheduling add-on", glamic: "Included", alternatives: "$19" },
   { name: "Bi-directional Calendar Sync", glamic: "Included", alternatives: "X" },
   { name: "Custom Mobile & Studio Services Features", glamic: "Included", alternatives: "X" }
 ];
