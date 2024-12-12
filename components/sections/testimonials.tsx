@@ -6,21 +6,21 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "CEO, TechStart",
-    content: "This platform has transformed how we operate. The analytics tools are incredibly powerful and intuitive.",
+    name: "Sophia",
+    role: "Makeup Artist",
+    content: "Honestly, Glamic has saved me so much time! Before, I was constantly overwhelmed trying to keep track of DMs, texts, and appointments. Now, it’s all in one app, and my clients love how simple it is to book with me. It’s like having an assistant, but way cheaper!",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop",
   },
   {
-    name: "Michael Chen",
-    role: "Operations Director, GrowthCo",
-    content: "The collaboration features have made our remote team work seamlessly. It's been a game-changer for us.",
+    name: "Jasmine",
+    role: "Lash Technician",
+    content: "I’ll admit, I wasn’t sure about trying another app, but Glamic totally surprised me. Setting up my custom website was crazy fast, and my clients can book, check my policies, and even sign forms without me lifting a finger. It’s made my life so much easier!",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop",
   },
   {
-    name: "Emily Rodriguez",
-    role: "Founder, InnovateNow",
-    content: "Security was our top concern, and this platform exceeded our expectations. Highly recommended!",
+    name: "Amara",
+    role: "Nail Technician",
+    content: "I used to spend so much time trying to keep my schedule straight, especially since I’m always on the go. With Glamic, everything just works. Bookings, payments, even suggesting packages—it does it all for me. I’ve actually been making more money since I started using it!",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop",
   },
 ];
