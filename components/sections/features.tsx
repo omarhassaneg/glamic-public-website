@@ -1,21 +1,41 @@
 import { Card } from "@/components/ui/card";
-import { Calendar, CreditCard, Globe } from "lucide-react";
+import { Calendar, CreditCard, Globe, Bell, ShieldCheck, MapPin, Instagram } from "lucide-react";
 
 const features = [
+  {
+    title: "Payment Processing",
+    description: "Securely accept cash and card payments with ease.",
+    icon: CreditCard,
+  },
+  {
+    title: "Your Own Website",
+    description: "Create a custom booking website that reflects your brand.",
+    icon: Globe,
+  },
+  {
+    title: "SMS Appointment Reminders",
+    description: "Keep your clients informed and reduce no-shows.",
+    icon: Bell,
+  },
+  {
+    title: "Social Media Integration (Coming Soon)",
+    description: "Seamlessly connect your social platforms to streamline interactions.",
+    icon: Instagram,
+  },
+  {
+    title: "Industry Policies for You to Use",
+    description: "Access ready-to-use policies tailored to your business.",
+    icon: ShieldCheck,
+  },
+  {
+    title: "Provider Locator Tool",
+    description: "Help clients find you easily with our location tool.",
+    icon: MapPin,
+  },
   {
     title: "Automated Scheduling Made Simple",
     description: "Say goodbye to manual scheduling and hello to automation.",
     icon: Calendar,
-  },
-  {
-    title: "Secure Payment Processing for Your Clients",
-    description: "Easily accept cash and card payments with confidence.",
-    icon: CreditCard,
-  },
-  {
-    title: "Custom Booking Websites Tailored for You",
-    description: "Create a unique online presence that reflects your brand.",
-    icon: Globe,
   },
 ];
 
@@ -25,7 +45,7 @@ export function FeaturesSection() {
       <div className="container px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-navy mb-4">
-            Revolutionize Your Booking Experience Today
+            Everything you need to run your business - at one low price!
           </h2>
           <p className="text-navy/70 max-w-2xl mx-auto">
             Glamic offers a seamless solution for beauty professionals, streamlining their scheduling and booking processes.

@@ -15,7 +15,7 @@ export function HeroSection() {
               </span>
             </h1>
             <p className="mx-auto max-w-[700px] text-navy/80 md:text-xl">
-              Welcome to Glamic, where we streamline your scheduling and booking process. Our all-in-one platform empowers beauty professionals to manage appointments effortlessly and focus on what they do best.
+            The ultimate all-in-one technology solution for all independent beauty service providers, from mobile beauty professionals to those operating their own studios.
             </p>
           </div>
           <div className="flex flex-col w-full sm:w-auto sm:flex-row gap-4 px-4 sm:px-0">
