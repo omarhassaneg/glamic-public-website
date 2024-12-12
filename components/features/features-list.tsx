@@ -25,20 +25,23 @@ const features = [
 
 export function FeaturesList() {
   return (
-    <section className="w-full py-20 bg-white">
+    <section className="w-full py-20 bg-background dark:bg-navy">
       <div className="container px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-navy mb-4">
+          <h2 className="text-3xl font-bold text-navy dark:text-white mb-4">
             Experience Effortless Automated Scheduling for Your Beauty Services Today!
           </h2>
         </div>
         <div className="grid gap-8 md:grid-cols-3">
           {features.map((feature, index) => (
-            <Card key={index} className="p-6 flex flex-col items-center text-center">
+            <Card key={index} className="p-6 flex flex-col items-center text-center bg-white dark:bg-navy/50">
               <feature.icon className="h-12 w-12 text-gold mb-4" />
-              <h3 className="text-xl font-semibold text-navy mb-2">{feature.title}</h3>
-              <p className="text-navy/70 mb-6">{feature.description}</p>
-              <Button variant="outline" className="mt-auto border-gold text-gold hover:bg-gold hover:text-white">
+              <h3 className="text-xl font-semibold text-navy dark:text-white mb-2">{feature.title}</h3>
+              <p className="text-navy/70 dark:text-white/70 mb-6">{feature.description}</p>
+              <Button 
+                variant="outline" 
+                className="mt-auto border-gold text-gold hover:bg-gold hover:text-white dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-navy"
+              >
                 {feature.action}
               </Button>
             </Card>
