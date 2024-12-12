@@ -25,13 +25,13 @@ export function Footer() {
   const [email, setEmail] = useState("");
 
   return (
-    <footer className="border-t bg-white dark:bg-navy">
+    <footer className="border-t bg-background dark:bg-navy">
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Logo and Newsletter */}
           <div>
             <Link href="/" className="flex items-center space-x-2 mb-6">
-              <Logo isDark={false} />
+              <Logo /> {/* Removed isDark prop */}
             </Link>
             <div className="space-y-4">
               <h3 className="text-lg font-semibold text-navy dark:text-white">Subscribe to updates</h3>
@@ -48,7 +48,7 @@ export function Footer() {
                   Join
                 </Button>
               </div>
-              <p className="text-xs text-navy/60 dark:text-white/60">
+              <p className="text-xs text-navy/70 dark:text-white/70">
                 By subscribing, you accept our Privacy Policy
               </p>
             </div>
@@ -93,17 +93,17 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-navy/10 dark:border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-navy/60 dark:text-white/60 text-sm">
+            <p className="text-navy/70 dark:text-white/70 text-sm">
               © {new Date().getFullYear()} Glamic. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <Link href="/privacy" className="text-navy/60 dark:text-white/60 hover:text-navy dark:hover:text-white text-sm">
+              <Link href="/privacy" className="text-navy/70 dark:text-white/70 hover:text-navy dark:hover:text-white text-sm">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="text-navy/60 dark:text-white/60 hover:text-navy dark:hover:text-white text-sm">
+              <Link href="/terms" className="text-navy/70 dark:text-white/70 hover:text-navy dark:hover:text-white text-sm">
                 Terms of Use
               </Link>
-              <button className="text-navy/60 dark:text-white/60 hover:text-navy dark:hover:text-white text-sm">
+              <button className="text-navy/70 dark:text-white/70 hover:text-navy dark:hover:text-white text-sm">
                 Cookie Settings
               </button>
             </div>
