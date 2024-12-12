@@ -7,35 +7,28 @@ import { Check, Package } from "lucide-react";
 
 const plans = [
   {
-    name: "Basic plan",
-    price: "19",
-    features: [
-      "Basic scheduling features",
-      "Email notifications",
-      "Calendar integration"
-    ]
-  },
-  {
-    name: "Business plan",
-    price: "29",
-    features: [
-      "Advanced scheduling",
-      "SMS notifications",
-      "Custom booking page",
-      "Payment processing"
-    ]
-  },
-  {
-    name: "Business + AI",
-    price: "49",
+    name: "Pro",
+    monthlyPrice: "39",
+    annualPrice: "29",
     features: [
       "AI booking assistant",
       "Advanced analytics",
       "Priority support",
       "Custom branding",
-      "Multi-location support"
-    ]
-  }
+      "Multi-location support",
+    ],
+  },
+  {
+    name: "Pro+",
+    monthlyPrice: "59",
+    annualPrice: "49",
+    features: [
+      "Advanced scheduling",
+      "SMS notifications",
+      "Custom booking page",
+      "Payment processing",
+    ],
+  },
 ];
 
 export function PricingPlans() {
@@ -65,16 +58,16 @@ export function PricingPlans() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="flex justify-center gap-8 flex-wrap md:flex-nowrap">
           {plans.map((plan) => (
-            <Card key={plan.name} className="p-6">
+            <Card key={plan.name} className="p-6 w-full md:w-[40%]"> 
               <div className="flex flex-col h-full">
                 <div className="mb-6">
                   <Package className="h-10 w-10 text-gold mb-4" />
                   <h3 className="text-xl font-semibold text-navy mb-2">{plan.name}</h3>
                   <div className="flex items-baseline">
-                    <span className="text-4xl font-bold text-navy">${plan.price}</span>
-                    <span className="text-navy/70 ml-1">/mo</span>
+                    <span className="text-4xl font-bold text-navy">${billing === "monthly" ? plan.monthlyPrice : plan.annualPrice}</span>
+                    <span className="text-navy/70 ml-1">{billing === "monthly" ? "/mo" : "/yr"}</span>
                   </div>
                 </div>
                 <div className="flex-grow">
