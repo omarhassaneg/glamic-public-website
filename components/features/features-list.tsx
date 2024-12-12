@@ -1,23 +1,47 @@
 import { Card } from "@/components/ui/card";
-import { Calendar, CreditCard, Globe } from "lucide-react";
+import { Calendar, CreditCard, Globe, Bell, Instagram, ShieldCheck, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const features = [
   {
-    title: "Seamless Payment Processing",
-    description: "Our platform automates your scheduling, allowing you to focus on your craft.",
+    title: "Payment Processing",
+    description: "Securely accept cash and card payments with ease.",
     icon: CreditCard,
-    action: "Learn More",
+    action: "Get Started",
   },
   {
-    title: "Custom Booking Websites",
-    description: "Stand out with a personalized booking site that reflects your brand.",
+    title: "Your Own Website",
+    description: "Create a custom booking website that reflects your brand.",
     icon: Globe,
-    action: "Sign Up",
+    action: "Get Started",
   },
   {
-    title: "User-Friendly Interface",
-    description: "Our intuitive dashboard makes managing appointments a breeze for beauty professionals.",
+    title: "SMS Appointment Reminders",
+    description: "Keep your clients informed and reduce no-shows.",
+    icon: Bell,
+    action: "Get Started",
+  },
+  {
+    title: "Social Media Integration (Coming Soon)",
+    description: "Seamlessly connect your social platforms to streamline interactions.",
+    icon: Instagram,
+    action: "Get Started",
+  },
+  {
+    title: "Industry Policies for You to Use",
+    description: "Access ready-to-use policies tailored to your business.",
+    icon: ShieldCheck,
+    action: "Get Started",
+  },
+  {
+    title: "Provider Locator Tool",
+    description: "Help clients find you easily with our location tool.",
+    icon: MapPin,
+    action: "Get Started",
+  },
+  {
+    title: "Automated Scheduling Made Simple",
+    description: "Say goodbye to manual scheduling and hello to automation.",
     icon: Calendar,
     action: "Get Started",
   },
