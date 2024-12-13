@@ -47,12 +47,12 @@ const conversation = [
 
 export function AIWorkflow() {
   return (
-    <section className="w-full py-24 bg-black">
+    <section className="w-full py-24 bg-background dark:bg-navy">
       <div className="container px-4 md:px-6">
         <div className="text-center mb-16">
           <div className="text-gold text-sm font-medium mb-2">HOW IT WORKS</div>
-          <h2 className="text-3xl font-bold text-white mb-4">Seamless Booking Experience</h2>
-          <p className="text-white/70 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold text-navy dark:text-white mb-4">Seamless Booking Experience</h2>
+          <p className="text-navy/70 dark:text-white/70 max-w-2xl mx-auto">
             See how our AI Agents handle customer interactions and bookings efficiently
           </p>
         </div>
@@ -89,14 +89,14 @@ export function AIWorkflow() {
                         <div className={`max-w-[80%] ${message.type === 'customer' ? 'pr-8' : 'pl-8'}`}>
                           <div className="flex items-start gap-3">
                             {message.type === 'customer' && (
-                              <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
-                                <span className="text-sm text-white">C</span>
+                              <div className="w-8 h-8 rounded-full bg-navy/10 dark:bg-white/10 flex items-center justify-center flex-shrink-0">
+                                <span className="text-sm text-navy dark:text-white">C</span>
                               </div>
                             )}
                             <div className={`rounded-lg p-4 ${
                               message.type === 'customer' 
-                                ? 'bg-navy/30 text-white' 
-                                : 'bg-gold/10 text-white'
+                                ? 'bg-navy/10 dark:bg-white/10 text-navy dark:text-white' 
+                                : 'bg-gold/10 text-navy dark:text-white'
                             }`}>
                               <p className="text-sm">{message.text}</p>
                             </div>

@@ -29,13 +29,13 @@ const features = [
 
 export function AIFeatures() {
   return (
-    <section className="w-full py-24 bg-white">
+    <section className="w-full py-24 bg-navy">
       <div className="container px-4 md:px-6 max-w-5xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             How AI-Powered Smart Booking Works
           </h2>
-          <p className="text-navy/70 text-lg max-w-2xl mx-auto">
+          <p className="text-white/70 text-lg max-w-2xl mx-auto">
             Our AI solution transforms your booking process with intelligent automation and seamless customer interactions.
           </p>
         </div>
@@ -50,11 +50,11 @@ export function AIFeatures() {
               viewport={{ once: true }}
               className="flex flex-col items-center text-center"
             >
-              <div className="mb-6 p-4 rounded-full bg-navy/5">
+              <div className="mb-6 p-4 rounded-full bg-white/10">
                 <feature.icon className="h-8 w-8 text-gold" />
               </div>
-              <h3 className="text-xl font-semibold text-navy mb-3">{feature.title}</h3>
-              <p className="text-navy/70 max-w-sm">{feature.description}</p>
+              <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
+              <p className="text-white/70 max-w-sm">{feature.description}</p>
             </motion.div>
           ))}
         </div>
