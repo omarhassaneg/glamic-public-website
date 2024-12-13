@@ -6,7 +6,7 @@ import { PlanCard } from "./plan-card";
 import { pricingPlans } from "./data";
 
 export function PricingPlans() {
-  const [billing, setBilling] = useState<"monthly" | "annual">("monthly");
+  const [billing, setBilling] = useState<"monthly" | "annual">("annual");
 
   return (
     <section className="w-full py-20 bg-white dark:bg-navy">

@@ -6,20 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { Logo } from "@/components/ui/logo";
-
-const footerLinks = {
-  resources: [
-    { name: "Blog Posts", href: "/blog" },
-    { name: "FAQs", href: "/faqs" },
-    { name: "Support Center", href: "/support" },
-    { name: "Feedback", href: "/feedback" },
-  ],
-  follow: [
-    { name: "Instagram", href: "#", icon: Instagram },
-    { name: "X", href: "#", icon: Twitter },
-    { name: "LinkedIn", href: "#", icon: Linkedin },
-  ],
-};
+import { footerLinks } from "./links";
+import { LegalLinks } from "./legal-links";
 
 export function Footer() {
   const [email, setEmail] = useState("");
@@ -31,7 +19,7 @@ export function Footer() {
           {/* Logo and Newsletter */}
           <div>
             <Link href="/" className="flex items-center space-x-2 mb-6">
-              <Logo /> {/* Removed isDark prop */}
+              <Logo />
             </Link>
             <div className="space-y-4">
               <h3 className="text-lg font-semibold text-navy dark:text-white">Subscribe to updates</h3>
@@ -75,17 +63,20 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-gold mb-4">Follow Us</h3>
             <ul className="space-y-3">
-              {footerLinks.follow.map((link) => (
-                <li key={link.name}>
-                  <Link 
-                    href={link.href}
-                    className="flex items-center text-navy/70 dark:text-white/70 hover:text-navy dark:hover:text-white transition-colors"
-                  >
-                    <link.icon className="h-4 w-4 mr-2" />
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
+              {footerLinks.follow.map((link) => {
+                const Icon = { Instagram, Twitter, Linkedin }[link.icon as keyof typeof icons];
+                return (
+                  <li key={link.name}>
+                    <Link 
+                      href={link.href}
+                      className="flex items-center text-navy/70 dark:text-white/70 hover:text-navy dark:hover:text-white transition-colors"
+                    >
+                      <Icon className="h-4 w-4 mr-2" />
+                      {link.name}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
@@ -96,17 +87,7 @@ export function Footer() {
             <p className="text-navy/70 dark:text-white/70 text-sm">
               © {new Date().getFullYear()} Glamic. All rights reserved.
             </p>
-            <div className="flex gap-6">
-              <Link href="/privacy-policy" className="text-navy/70 dark:text-white/70 hover:text-navy dark:hover:text-white text-sm">
-                Privacy Policy
-              </Link>
-              <Link href="/terms-of-use" className="text-navy/70 dark:text-white/70 hover:text-navy dark:hover:text-white text-sm">
-                Terms of Use
-              </Link>
-              <button className="text-navy/70 dark:text-white/70 hover:text-navy dark:hover:text-white text-sm">
-                Cookie Settings
-              </button>
-            </div>
+            <LegalLinks />
           </div>
         </div>
       </div>
