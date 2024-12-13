@@ -8,6 +8,7 @@ import { Footer } from '../components/footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://glamic.com'),
   title: 'Glamic - Beauty Business Management Platform',
   description: 'Transform your beauty business with Glamic - The all-in-one platform for scheduling, client management, and automated booking. Perfect for independent beauty professionals.',
   keywords: 'beauty business, scheduling software, booking platform, salon management, beauty professionals, automated booking',
