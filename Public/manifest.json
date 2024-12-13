@@ -1,0 +1,21 @@
+{
+    "name": "Glamic - Beauty Business Management Platform",
+    "short_name": "Glamic",
+    "description": "Transform your beauty business with Glamic - The all-in-one platform for scheduling, client management, and automated booking.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#FBFBFB",
+    "theme_color": "#112840",
+    "icons": [
+      {
+        "src": "https://groomee-storage.s3.us-east-2.amazonaws.com/logo+typography+Main+-+112840.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "https://groomee-storage.s3.us-east-2.amazonaws.com/logo+typography+Main+-+112840.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
