@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     images: ['https://groomee-storage.s3.us-east-2.amazonaws.com/logo+typography+Main+-+112840.png'],
   },
   icons: {
-    icon: 'https://groomee-storage.s3.us-east-2.amazonaws.com/logo+typography+Main+-+112840.png',
-    shortcut: 'https://groomee-storage.s3.us-east-2.amazonaws.com/logo+typography+Main+-+112840.png',
-    apple: 'https://groomee-storage.s3.us-east-2.amazonaws.com/logo+typography+Main+-+112840.png',
+    icon: 'https://groomee-storage.s3.us-east-2.amazonaws.com/Neutral+light+Logo+figure+%2B+Main+bkrnd.png',
+    shortcut: 'https://groomee-storage.s3.us-east-2.amazonaws.com/Neutral+light+Logo+figure+%2B+Main+bkrnd.png',
+    apple: 'https://groomee-storage.s3.us-east-2.amazonaws.com/Neutral+light+Logo+figure+%2B+Main+bkrnd.png',
   },
   manifest: '/manifest.json',
   robots: {
