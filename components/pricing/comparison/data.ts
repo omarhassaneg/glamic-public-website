@@ -7,7 +7,6 @@ export const plans: Plan[] = [
 ];
 
 export const features: PlanFeature[] = [
-  // Core Business Setup
   { 
     name: "Profile & Business Setup",
     pro: "Basic Setup",
@@ -26,8 +25,6 @@ export const features: PlanFeature[] = [
     proAI: "Advanced",
     proAIPlus: "Premium"
   },
-
-  // Scheduling & Communication
   { 
     name: "SMS & Appointment Reminders",
     pro: true,
@@ -46,8 +43,6 @@ export const features: PlanFeature[] = [
     proAI: "AI-Enhanced",
     proAIPlus: "Advanced AI"
   },
-
-  // Client Management
   { 
     name: "Client Reviews Management",
     pro: "Basic",
@@ -60,8 +55,6 @@ export const features: PlanFeature[] = [
     proAI: "Up to 2000 clients",
     proAIPlus: "Unlimited"
   },
-
-  // AI Features
   { 
     name: "AI Booking Assistant",
     pro: false,
@@ -80,8 +73,6 @@ export const features: PlanFeature[] = [
     proAI: "Standard",
     proAIPlus: "Advanced"
   },
-
-  // Social Media & Marketing
   { 
     name: "Instagram DM Automation",
     pro: false,
@@ -100,8 +91,6 @@ export const features: PlanFeature[] = [
     proAI: "Advanced",
     proAIPlus: "Premium"
   },
-
-  // AI Advanced Features
   { 
     name: "24/7 AI Support",
     pro: false,
@@ -120,8 +109,6 @@ export const features: PlanFeature[] = [
     proAI: "Basic Suite",
     proAIPlus: "Full Suite"
   },
-
-  // Analytics & Support
   { 
     name: "Analytics & Insights",
     pro: "Basic Reports",
@@ -140,15 +127,4 @@ export const features: PlanFeature[] = [
     proAI: "Standard",
     proAIPlus: "Premium"
   }
-];
-
-// Feature categories for organization (can be used for section headers)
-export const featureCategories = [
-  "Core Business Setup",
-  "Scheduling & Communication",
-  "Client Management",
-  "AI Features",
-  "Social Media & Marketing",
-  "AI Advanced Features",
-  "Analytics & Support"
 ];

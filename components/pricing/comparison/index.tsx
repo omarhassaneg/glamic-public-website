@@ -1,19 +1,8 @@
-import { plans, features, featureCategories } from "./data";
+import { plans, features } from "./data";
 import { PlanHeader } from "./plan-header";
 import { FeatureRow } from "./feature-row";
-import { CategoryHeader } from "./category-header";
 
 export function PricingComparison() {
-  // Group features by category
-  const featuresByCategory = features.reduce((acc, feature, index) => {
-    const category = featureCategories[Math.floor(index / (features.length / featureCategories.length))];
-    if (!acc[category]) {
-      acc[category] = [];
-    }
-    acc[category].push(feature);
-    return acc;
-  }, {} as Record<string, typeof features>);
-
   return (
     <section className="w-full py-20 bg-white dark:bg-navy">
       <div className="container px-4 md:px-6">
@@ -36,13 +25,8 @@ export function PricingComparison() {
               ))}
             </div>
 
-            {featureCategories.map((category) => (
-              <div key={category}>
-                <CategoryHeader category={category} />
-                {featuresByCategory[category]?.map((feature, index) => (
-                  <FeatureRow key={`${category}-${index}`} feature={feature} index={index} />
-                ))}
-              </div>
+            {features.map((feature, index) => (
+              <FeatureRow key={index} feature={feature} index={index} />
             ))}
           </div>
         </div>
