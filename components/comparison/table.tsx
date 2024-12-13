@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 const features = [
   {
     name: "Pricing Overview",
-    glamic: "$29/month",
+    glamic: "$19.99/month",
     alternatives: "$90+/month typically",
     type: "price",
   },

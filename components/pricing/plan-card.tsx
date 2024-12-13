@@ -35,11 +35,6 @@ export function PlanCard({ plan, billing }: PlanCardProps) {
             <span className="bg-navy dark:bg-gold text-white text-sm font-medium px-3 py-1 rounded-full">
               Coming Soon
             </span>
-            {plan.earlyAccess && (
-              <span className="bg-gold text-white text-sm font-medium px-3 py-1 rounded-full">
-                50% off if you join waitlist
-              </span>
-            )}
           </div>
         )}
 
