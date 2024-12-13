@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function PricingCTA() {
   return (
@@ -14,9 +15,11 @@ export function PricingCTA() {
             Start your free trial today and discover the benefits of Glamic for your beauty business.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+          <Link href="/auth/get-started">
             <Button className="w-full sm:w-auto bg-[#957F5A] hover:bg-[#957F5A]/90 text-[#FBFBFB]">
               Get Started
             </Button>
+            </Link>
           </div>
         </div>
       </div>

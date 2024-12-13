@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ImageMasonry } from "@/components/ui/image-masonry";
+import Link from "next/link";
 
 export function HeroSection() {
   return (
@@ -19,12 +20,14 @@ export function HeroSection() {
             </p>
           </div>
           <div className="flex flex-col w-full sm:w-auto sm:flex-row gap-4 px-4 sm:px-0">
-            <Button 
-              size="lg" 
-              className="w-full sm:w-auto bg-navy hover:bg-navy/90 text-white dark:bg-gold dark:hover:bg-gold/90"
-            >
-              Get Started
-            </Button>
+            <Link href="/auth/get-started">
+              <Button 
+                size="lg" 
+                className="w-full sm:w-auto bg-navy hover:bg-navy/90 text-white dark:bg-gold dark:hover:bg-gold/90"
+              >
+                Get Started
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

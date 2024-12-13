@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export function CTASection() {
   return (
@@ -10,16 +11,18 @@ export function CTASection() {
             Ready to Transform Your Business?
           </h2>
           <p className="text-navy/70 dark:text-white/70 text-lg max-w-2xl">
-            Join thousands of independent beauty service providers that have already revolutionized their operations with our platform.
+            Join thousands of independent beauty service providers who have already revolutionized their operations with our platform.
           </p>
           <div className="w-full">
-            <Button 
-              size="lg"
-              className="w-full sm:w-auto bg-gold hover:bg-gold/90 text-white"
-            >
-              Get Started
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            <Link href="/auth/get-started">
+              <Button 
+                size="lg"
+                className="w-full sm:w-auto bg-gold hover:bg-gold/90 text-white"
+              >
+                Get Started
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

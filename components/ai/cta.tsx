@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export function AICTA() {
   return (
@@ -13,13 +14,12 @@ export function AICTA() {
             Join thousands of beauty professionals who have transformed their booking management with our AI-powered solution.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+          <Link href="/auth/get-started">
             <Button className="bg-gold hover:bg-gold/90 text-white">
               Get Started
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button variant="outline" className="border-white text-white hover:bg-white hover:text-navy">
-              Learn More
-            </Button>
+            </Link>
           </div>
         </div>
       </div>

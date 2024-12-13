@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export function FeaturesCTA() {
   return (
@@ -13,13 +14,15 @@ export function FeaturesCTA() {
             Join us today for a free trial and transform your beauty business with Glamic!
           </p>
           <div className="w-full">
-            <Button 
-              size="lg" 
-              className="w-full sm:w-auto bg-gold hover:bg-gold/90 text-white"
-            >
-              Get Started
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            <Link href="/auth/get-started">
+              <Button 
+                size="lg" 
+                className="w-full sm:w-auto bg-gold hover:bg-gold/90 text-white"
+              >
+                Get Started
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

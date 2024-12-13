@@ -1,9 +1,9 @@
 import { PlanFeature, Plan } from "./types";
 
 export const plans: Plan[] = [
-  { name: "Pro", price: 39 },
-  { name: "Pro AI", price: 59, isComingSoon: true },
-  { name: "Pro AI+", price: 79, isComingSoon: true }
+  { name: "Pro", price: 19.99 },
+  { name: "Pro AI", price: 49.99, isComingSoon: true },
+  { name: "Pro AI+", price: 69.99, isComingSoon: true }
 ];
 
 export const features: PlanFeature[] = [

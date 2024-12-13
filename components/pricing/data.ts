@@ -3,8 +3,8 @@ import { PricingPlan } from "./types";
 export const pricingPlans: PricingPlan[] = [
   {
     name: "Pro",
-    monthlyPrice: 39,
-    annualPrice: 29,
+    monthlyPrice: 24.99,
+    annualPrice: 20,
     features: [
       { name: "Instant Ready-Made Profile & Business Setup" },
       { name: "Launch Your Website Instantly" },
@@ -17,8 +17,8 @@ export const pricingPlans: PricingPlan[] = [
   },
   {
     name: "Pro AI",
-    monthlyPrice: 59,
-    annualPrice: 49,
+    monthlyPrice: 59.99,
+    annualPrice: 50,
     comingSoon: true,
     features: [
       { name: "Everything in Pro, plus:" },
@@ -36,8 +36,8 @@ export const pricingPlans: PricingPlan[] = [
   },
   {
     name: "Pro AI+",
-    monthlyPrice: 79,
-    annualPrice: 69,
+    monthlyPrice: 79.99,
+    annualPrice: 70,
     comingSoon: true,
     features: [
       { name: "Everything in Pro AI, plus:" },

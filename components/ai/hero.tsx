@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export function AIHero() {
   return (
@@ -23,6 +24,7 @@ export function AIHero() {
             </p>
           </div>
           <div className="flex flex-col w-full sm:w-auto sm:flex-row gap-4 px-4 sm:px-0">
+          <Link href="/auth/get-started">
             <Button
               size="lg"
               className="w-full sm:w-auto bg-navy hover:bg-navy/90 text-white dark:bg-gold dark:hover:bg-gold/90"
@@ -30,6 +32,7 @@ export function AIHero() {
               Get Started
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
+            </Link>
           </div>
         </div>
       </div>

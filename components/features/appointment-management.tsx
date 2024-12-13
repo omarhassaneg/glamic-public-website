@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Smartphone } from "lucide-react";
+import Link from "next/link";
 
 export function AppointmentManagement() {
   return (
@@ -31,9 +32,11 @@ export function AppointmentManagement() {
               </div>
             </div>
             <div className="pt-4">
+            <Link href="/auth/get-started">
               <Button className="w-full bg-gold hover:bg-gold/90 text-white">
                 Get Started
               </Button>
+              </Link>
             </div>
           </div>
           <div className="relative h-[400px] bg-gradient-to-br from-navy/10 to-gold/10 dark:from-white/10 dark:to-gold/10 rounded-lg" />

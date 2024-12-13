@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MessageSquare, Clock } from "lucide-react";
 import { ChatWindow } from "@/components/chat/window";
+import Link from "next/link";
 
 const demoMessages = [
   {
@@ -49,9 +50,11 @@ export function AIFeatures() {
               </div>
             </div>
             <div className="pt-4">
+            <Link href="/auth/get-started">
               <Button className="w-full bg-gold hover:bg-gold/90 text-white">
                 Get Started
               </Button>
+              </Link>
             </div>
           </div>
           <div className="flex justify-center items-center">

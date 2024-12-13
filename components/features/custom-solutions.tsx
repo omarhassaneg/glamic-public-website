@@ -1,4 +1,6 @@
 import { Check } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const features = [
   "Automated Scheduling - Effortlessly manage your time",
@@ -30,6 +32,13 @@ export function CustomSolutions() {
                   <span className="text-navy dark:text-white">{feature}</span>
                 </div>
               ))}
+            </div>
+            <div className="pt-4">
+              <Link href="/auth/get-started">
+                <Button className="w-full bg-gold hover:bg-gold/90 text-white">
+                  Get Started
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

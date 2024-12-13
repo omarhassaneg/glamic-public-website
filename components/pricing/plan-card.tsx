@@ -8,6 +8,7 @@ import { Card } from "@/components/ui/card";
 import { PricingPlan } from "./types";
 import { cn } from "@/lib/utils";
 import { WaitlistDialog } from "@/components/common/waitlist-dialog";
+import Link from "next/link";
 
 interface PlanCardProps {
   plan: PricingPlan;
@@ -86,11 +87,13 @@ export function PlanCard({ plan, billing }: PlanCardProps) {
             Join Waitlist
           </Button>
         ) : (
+          <Link href="/auth/get-started">
           <Button 
             className="w-full bg-navy hover:bg-navy/90 dark:bg-gold dark:hover:bg-gold/90 text-white"
           >
-            Get Started
+            Start Free Trial
           </Button>
+          </Link>
         )}
       </Card>
 
