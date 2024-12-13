@@ -18,7 +18,7 @@ export function FeaturesHero() {
               </span>
             </h1>
             <p className="mx-auto max-w-[700px] text-navy/80 dark:text-white/80 md:text-xl">
-              Everything you need to streamline your operations and grow your business, all in one platform.
+              Everything you need to streamline your operations and grow your business, all in one platform!
             </p>
           </div>
           <div className="flex flex-col w-full sm:w-auto sm:flex-row gap-4 px-4 sm:px-0">
