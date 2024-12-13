@@ -6,10 +6,10 @@ export const pricingPlans: PricingPlan[] = [
     monthlyPrice: 39,
     annualPrice: 29,
     features: [
-      { name: "Instant Ready-Made Profile Setup" },
+      { name: "Instant Ready-Made Profile & Business Setup" },
       { name: "Launch Your Website Instantly" },
       { name: "Payment and Refund Management" },
-      { name: "SMS Appointment Reminders" },
+      { name: "SMS Payments & Appointment Reminders" },
       { name: "Provider Locator Tool" },
       { name: "Automated Scheduling" },
       { name: "Build Trust with Reviews" },
