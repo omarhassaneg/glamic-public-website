@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { PricingPlan } from "./types";
 import { cn } from "@/lib/utils";
-import { WaitlistDialog } from "./waitlist-dialog";
+import { WaitlistDialog } from "@/components/common/waitlist-dialog";
 
 interface PlanCardProps {
   plan: PricingPlan;
@@ -97,7 +97,7 @@ export function PlanCard({ plan, billing }: PlanCardProps) {
       <WaitlistDialog
         isOpen={showWaitlist}
         onClose={() => setShowWaitlist(false)}
-        planName={plan.name}
+        title={`Join the Waitlist for ${plan.name}`}
         earlyAccess={plan.earlyAccess}
       />
     </motion.div>

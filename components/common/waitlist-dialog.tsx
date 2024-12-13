@@ -14,11 +14,18 @@ import { cn } from "@/lib/utils";
 interface WaitlistDialogProps {
   isOpen: boolean;
   onClose: () => void;
-  planName: string;
+  title: string;
+  description?: string;
   earlyAccess?: { discount: string; description: string };
 }
 
-export function WaitlistDialog({ isOpen, onClose, planName, earlyAccess }: WaitlistDialogProps) {
+export function WaitlistDialog({ 
+  isOpen, 
+  onClose, 
+  title,
+  description,
+  earlyAccess 
+}: WaitlistDialogProps) {
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -36,7 +43,7 @@ export function WaitlistDialog({ isOpen, onClose, planName, earlyAccess }: Waitl
       )}>
         <DialogHeader className="space-y-3">
           <DialogTitle className="text-navy dark:text-white">
-            Join the Waitlist for {planName}
+            {title}
           </DialogTitle>
           <div className="text-navy/70 dark:text-white/70 text-sm">
             {earlyAccess ? (
@@ -45,7 +52,7 @@ export function WaitlistDialog({ isOpen, onClose, planName, earlyAccess }: Waitl
                 <div>{earlyAccess.description}</div>
               </div>
             ) : (
-              <div>Be the first to know when this plan becomes available.</div>
+              <div>{description || "Be the first to know when this becomes available."}</div>
             )}
           </div>
         </DialogHeader>

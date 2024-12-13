@@ -1,9 +1,13 @@
 "use client";
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { WaitlistDialog } from "@/components/common/waitlist-dialog";
 
 export function AIContentCTA() {
+  const [showWaitlist, setShowWaitlist] = useState(false);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -14,12 +18,20 @@ export function AIContentCTA() {
       <Button 
         size="lg"
         className="bg-gold hover:bg-gold/90 text-white"
+        onClick={() => setShowWaitlist(true)}
       >
         Join Waitlist
       </Button>
       <p className="mt-4 text-white/60 text-sm">
         Be the first to know when AI content generation launches
       </p>
+
+      <WaitlistDialog
+        isOpen={showWaitlist}
+        onClose={() => setShowWaitlist(false)}
+        title="Join the AI Content Generation Waitlist"
+        description="Get early access to our AI-powered content creation tools. Transform your social media presence with stunning visuals and engaging captions."
+      />
     </motion.div>
   );
 }

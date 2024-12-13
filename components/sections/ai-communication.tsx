@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Instagram } from "lucide-react";
 import { motion } from "framer-motion";
@@ -7,8 +8,11 @@ import { ChatWindow } from "@/components/chat/window";
 import { FeatureCard } from "@/components/instagram/feature-card";
 import { ComingSoonBadge } from "@/components/ui/coming-soon-badge";
 import { instagramFeatures, chatMessages } from "@/components/instagram/constants";
+import { WaitlistDialog } from "@/components/common/waitlist-dialog";
 
 export function AICommunicationSection() {
+  const [showWaitlist, setShowWaitlist] = useState(false);
+
   return (
     <section className="w-full py-24 bg-navy overflow-hidden relative">
       <ComingSoonBadge />
@@ -50,6 +54,7 @@ export function AICommunicationSection() {
 
             <Button 
               className="w-full bg-gold hover:bg-gold/90 text-white h-12 text-base"
+              onClick={() => setShowWaitlist(true)}
             >
               Join Waitlist
             </Button>
@@ -60,6 +65,13 @@ export function AICommunicationSection() {
           </div>
         </div>
       </div>
+
+      <WaitlistDialog
+        isOpen={showWaitlist}
+        onClose={() => setShowWaitlist(false)}
+        title="Join the Instagram AI Integration Waitlist"
+        description="Be the first to transform your Instagram DMs into an automated booking machine. Get early access and exclusive benefits!"
+      />
     </section>
   );
 }
