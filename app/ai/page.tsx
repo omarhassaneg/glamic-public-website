@@ -2,7 +2,7 @@ import { AIHero } from "@/components/ai/hero";
 import { AIFeatures } from "@/components/ai/features";
 import { AIWorkflow } from "@/components/ai/workflow";
 import { AIBenefits } from "@/components/ai/benefits";
-import { AIChannels } from "@/components/ai/channels";
+import { AIContentSection } from "@/components/sections/ai-content";
 import { AICTA } from "@/components/ai/cta";
 
 export default function AIPage() {
@@ -12,7 +12,7 @@ export default function AIPage() {
       <AIFeatures />
       <AIWorkflow />
       <AIBenefits />
-      <AIChannels />
+      <AIContentSection />
       <AICTA />
     </div>
   );

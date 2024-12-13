@@ -1,13 +1,14 @@
-import { BlogHero } from "@/components/blog/hero";
-import { BlogGrid } from "@/components/blog/grid";
-import { BlogCategories } from "@/components/blog/categories";
+import { BlogHero } from "@/components/blog/sections/hero";
+import { BlogGrid } from "@/components/blog/sections/grid";
+import { BlogCategories } from "@/components/blog/sections/categories";
+import { BlogPageLayout } from "@/components/blog/layout/page-layout";
 
 export default function BlogPage() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <BlogPageLayout>
       <BlogHero />
       <BlogCategories />
       <BlogGrid />
-    </div>
+    </BlogPageLayout>
   );
 }
