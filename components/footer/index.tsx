@@ -12,6 +12,14 @@ import { LegalLinks } from "./legal-links";
 export function Footer() {
   const [email, setEmail] = useState("");
 
+
+  // Explicitly define the icons object
+  const icons = {
+    Instagram,
+    Twitter,
+    Linkedin,
+  };
+
   return (
     <footer className="border-t bg-background dark:bg-navy">
       <div className="container py-12 md:py-16">
@@ -64,7 +72,7 @@ export function Footer() {
             <h3 className="text-lg font-semibold text-gold mb-4">Follow Us</h3>
             <ul className="space-y-3">
               {footerLinks.follow.map((link) => {
-                const Icon = { Instagram, Twitter, Linkedin }[link.icon as keyof typeof icons];
+                const Icon = {Instagram, Twitter, Linkedin}[link.icon as keyof typeof icons];
                 return (
                   <li key={link.name}>
                     <Link 
