@@ -58,7 +58,7 @@ export function MobileNav({ items, pathname, isHeroDark }: MobileNavProps) {
               </Link>
             ))}
             <div className="pt-4">
-              <Link href="/auth/sign-in" className="block w-full">
+              <Link href="/auth/sign-in" onClick={() => setIsOpen(false)} className="block w-full">
                 <Button 
                   variant="outline" 
                   className="w-full border-navy/20 dark:border-white/20 text-navy dark:text-white hover:bg-navy/10 dark:hover:bg-white/10 rounded-full"
@@ -68,7 +68,7 @@ export function MobileNav({ items, pathname, isHeroDark }: MobileNavProps) {
               </Link>
             </div>
             <div>
-              <Link href="/auth/get-started" className="block w-full">
+              <Link href="/auth/get-started" onClick={() => setIsOpen(false)} className="block w-full">
                 <Button className="w-full bg-gold hover:bg-gold/90 text-white font-semibold rounded-full">
                   Get Started
                 </Button>
