@@ -34,7 +34,7 @@ export function CustomSolutions() {
               ))}
             </div>
             <div className="pt-4">
-              <Link href="/auth/get-started">
+              <Link href="/download">
                 <Button className="w-full bg-gold hover:bg-gold/90 text-white">
                   Get Started
                 </Button>

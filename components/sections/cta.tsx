@@ -14,7 +14,7 @@ export function CTASection() {
             Join thousands of independent beauty service providers who have already revolutionized their operations with our platform.
           </p>
           <div className="w-full">
-            <Link href="/auth/get-started">
+            <Link href="/download">
               <Button 
                 size="lg"
                 className="w-full sm:w-auto bg-gold hover:bg-gold/90 text-white"

@@ -14,7 +14,7 @@ export function ComparisonCTA() {
             Join thousands of beauty professionals who have already made the switch to Glamic.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-          <Link href="/auth/get-started">
+          <Link href="/download">
             <Button className="w-full sm:w-auto bg-navy hover:bg-navy/90 text-white dark:bg-gold dark:hover:bg-gold/90">
               Get Started
               <ArrowRight className="ml-2 h-4 w-4" />

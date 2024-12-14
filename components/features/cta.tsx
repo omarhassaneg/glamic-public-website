@@ -11,10 +11,10 @@ export function FeaturesCTA() {
             Experience the Future of Booking
           </h2>
           <p className="text-navy/70 dark:text-white/70 text-lg max-w-2xl">
-            Join us today for a free trial and transform your beauty business with Glamic!
+            Join us today and transform your beauty business with Glamic!
           </p>
           <div className="w-full">
-            <Link href="/auth/get-started">
+            <Link href="/download">
               <Button 
                 size="lg" 
                 className="w-full sm:w-auto bg-gold hover:bg-gold/90 text-white"

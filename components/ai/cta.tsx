@@ -14,11 +14,11 @@ export function AICTA() {
             Join thousands of beauty professionals who have transformed their booking management with our AI-powered solution.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-          <Link href="/auth/get-started">
-            <Button className="bg-gold hover:bg-gold/90 text-white">
-              Get Started
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            <Link href="/download">
+              <Button className="bg-gold hover:bg-gold/90 text-white">
+                Get Started
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
             </Link>
           </div>
         </div>

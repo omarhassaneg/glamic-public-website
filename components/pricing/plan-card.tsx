@@ -82,7 +82,7 @@ export function PlanCard({ plan, billing }: PlanCardProps) {
             Join Waitlist
           </Button>
         ) : (
-          <Link href="/auth/get-started">
+          <Link href="/download">
           <Button 
             className="w-full bg-navy hover:bg-navy/90 dark:bg-gold dark:hover:bg-gold/90 text-white"
           >
