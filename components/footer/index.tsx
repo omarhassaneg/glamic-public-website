@@ -1,103 +1,22 @@
 "use client";
 
-import { Instagram, Twitter, Linkedin } from "lucide-react";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { useState } from "react";
-import { Logo } from "@/components/ui/logo";
-import { footerLinks } from "./links";
-import { LegalLinks } from "./legal-links";
+import { Newsletter } from "./newsletter";
+import { QuickLinks } from "./quick-links";
+import { SocialLinks } from "./social-links";
+import { DownloadSection } from "./download-section";
+import { BottomBar } from "./bottom-bar";
 
 export function Footer() {
-  const [email, setEmail] = useState("");
-
-
-  // Explicitly define the icons object
-  const icons = {
-    Instagram,
-    Twitter,
-    Linkedin,
-  };
-
   return (
     <footer className="border-t bg-background dark:bg-navy">
       <div className="container py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {/* Logo and Newsletter */}
-          <div>
-            <Link href="/" className="flex items-center space-x-2 mb-6">
-              <Logo />
-            </Link>
-            <div className="space-y-4">
-              <h3 className="text-lg font-semibold text-navy dark:text-white">Subscribe to updates</h3>
-              <p className="text-navy/70 dark:text-white/70">Stay informed about our latest features and offers!</p>
-              <div className="flex gap-2">
-                <Input
-                  type="email"
-                  placeholder="Your Email Here"
-                  className="bg-navy/10 dark:bg-white/10 border-navy/20 dark:border-white/20 text-navy dark:text-white placeholder:text-navy/50 dark:placeholder:text-white/50"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-                <Button className="bg-gold hover:bg-gold/90 text-white">
-                  Join
-                </Button>
-              </div>
-              <p className="text-xs text-navy/70 dark:text-white/70">
-                By subscribing, you accept our Privacy Policy
-              </p>
-            </div>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-semibold text-gold mb-4">Quick Links</h3>
-            <ul className="space-y-3">
-              {footerLinks.resources.map((link) => (
-                <li key={link.name}>
-                  <Link 
-                    href={link.href}
-                    className="text-navy/70 dark:text-white/70 hover:text-navy dark:hover:text-white transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Follow Us */}
-          <div>
-            <h3 className="text-lg font-semibold text-gold mb-4">Follow Us</h3>
-            <ul className="space-y-3">
-              {footerLinks.follow.map((link) => {
-                const Icon = {Instagram, Twitter, Linkedin}[link.icon as keyof typeof icons];
-                return (
-                  <li key={link.name}>
-                    <Link 
-                      href={link.href}
-                      className="flex items-center text-navy/70 dark:text-white/70 hover:text-navy dark:hover:text-white transition-colors"
-                    >
-                      <Icon className="h-4 w-4 mr-2" />
-                      {link.name}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+          <Newsletter />
+          <QuickLinks />
+          <SocialLinks />
+          <DownloadSection />
         </div>
-
-        {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-navy/10 dark:border-white/10">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-navy/70 dark:text-white/70 text-sm">
-              © {new Date().getFullYear()} Glamic. All rights reserved.
-            </p>
-            <LegalLinks />
-          </div>
-        </div>
+        <BottomBar />
       </div>
     </footer>
   );
