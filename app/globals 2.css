@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: 17, 40, 64;
+  --gold: 149, 127, 90;
+  --white: 251, 251, 251;
+  --light-blue: 189, 202, 217;
+}
+
+.dark {
+  --background: var(--navy);
+  --foreground: var(--white);
+}
+
+@layer base {
+  :root {
+    --background: var(--white);
+    --foreground: var(--navy);
+    
+    --card: var(--white);
+    --card-foreground: var(--navy);
+    
+    --popover: var(--white);
+    --popover-foreground: var(--navy);
+    
+    --primary: var(--navy);
+    --primary-foreground: var(--white);
+    
+    --secondary: var(--gold);
+    --secondary-foreground: var(--white);
+    
+    --muted: var(--light-blue);
+    --muted-foreground: var(--navy);
+    
+    --accent: var(--gold);
+    --accent-foreground: var(--white);
+    
+    --destructive: 0, 84.2%, 60.2%;
+    --destructive-foreground: var(--white);
+    
+    --border: var(--light-blue);
+    --input: var(--light-blue);
+    --ring: var(--navy);
+    
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: var(--navy);
+    --foreground: var(--white);
+    
+    --card: var(--navy);
+    --card-foreground: var(--white);
+    
+    --popover: var(--navy);
+    --popover-foreground: var(--white);
+    
+    --primary: var(--white);
+    --primary-foreground: var(--navy);
+    
+    --secondary: var(--gold);
+    --secondary-foreground: var(--white);
+    
+    --muted: var(--light-blue);
+    --muted-foreground: var(--white);
+    
+    --accent: var(--gold);
+    --accent-foreground: var(--white);
+    
+    --destructive: 0, 84.2%, 60.2%;
+    --destructive-foreground: var(--white);
+    
+    --border: var(--white);
+    --input: var(--white);
+    --ring: var(--white);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+
+.animate-scroll {
+  animation: scroll 40s linear infinite;
+}
+
+.animate-scroll-reverse {
+  animation: scroll 40s linear infinite reverse;
+}
