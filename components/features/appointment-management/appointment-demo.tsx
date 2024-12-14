@@ -15,8 +15,8 @@ export function AppointmentDemo() {
     >
       <Card className="overflow-hidden bg-gradient-to-br from-navy/5 to-gold/5 dark:from-white/5 dark:to-gold/5">
         <div className="p-6 space-y-6">
-          <AppointmentList />
           <AppointmentStats />
+          <AppointmentList />
         </div>
       </Card>
     </motion.div>
