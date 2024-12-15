@@ -1,4 +1,8 @@
+"use client";
+
 import { FeaturesGrid } from "../features/features-grid";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function FeaturesSection() {
   return (
@@ -13,6 +17,16 @@ export function FeaturesSection() {
           </p>
         </div>
         <FeaturesGrid />
+        <div className="mt-12 text-center">
+          <Link href="/features">
+            <Button 
+              size="lg" 
+              className="w-full sm:w-auto bg-navy hover:bg-navy/90 text-white dark:bg-gold dark:hover:bg-gold/90"
+            >
+              Learn More
+            </Button>
+          </Link>
+        </div>
       </div>
     </section>
   );

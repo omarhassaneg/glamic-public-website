@@ -1,5 +1,4 @@
 import { BlogPost } from "@/components/blog/post/post";
-import { BlogSidebar } from "@/components/blog/post/sidebar";
 import { BlogPageLayout } from "@/components/blog/layout/page-layout";
 import { getBlogPost, getBlogPosts } from "@/lib/blog/server";
 import { notFound } from "next/navigation";
@@ -14,6 +13,8 @@ export async function generateStaticParams() {
 export default async function BlogPostPage({ params }: { params: { slug: string } }) {
   try {
     const post = await getBlogPost(params.slug);
+    
+    // If it's not a blog post, pass through to other routes
     if (!post) {
       notFound();
     }
@@ -26,7 +27,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
               <BlogPost post={post} />
             </div>
             <div className="lg:col-span-1">
-              <BlogSidebar />
+              {/* Sidebar content */}
             </div>
           </div>
         </div>

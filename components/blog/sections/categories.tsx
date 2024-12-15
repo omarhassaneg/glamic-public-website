@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const categories = [
-  "View all",
   "Business Tips",
   "Client Stories",
   "Industry News",
