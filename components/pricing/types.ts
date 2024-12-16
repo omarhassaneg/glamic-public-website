@@ -3,11 +3,6 @@ export interface PricingFeature {
   description?: string;
 }
 
-export interface EarlyAccess {
-  discount: string;
-  description: string;
-}
-
 export interface PricingPlan {
   name: string;
   monthlyPrice: number;
@@ -15,5 +10,4 @@ export interface PricingPlan {
   features: PricingFeature[];
   isPopular?: boolean;
   comingSoon?: boolean;
-  earlyAccess?: EarlyAccess;
 }
