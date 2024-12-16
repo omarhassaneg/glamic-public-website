@@ -9,21 +9,21 @@ export const plans: Plan[] = [
 export const features: PlanFeature[] = [
   { 
     name: "Profile & Business Setup",
-    pro: "Basic Setup",
-    proAI: "AI-Enhanced Setup",
-    proAIPlus: "Advanced AI Setup"
+    pro: "Automatic",
+    proAI: "Automatic",
+    proAIPlus: "Automatic"
   },
   { 
     name: "Website Builder",
-    pro: "Standard Template",
-    proAI: "AI-Optimized Template",
-    proAIPlus: "Custom AI-Generated Design"
+    pro: "1 Click Setup",
+    proAI: "1 Click Setup",
+    proAIPlus: "1 Click Setup"
   },
   { 
-    name: "Payment Processing",
-    pro: "Standard",
-    proAI: "Advanced",
-    proAIPlus: "Premium"
+    name: "Payment Options For Your Customers",
+    pro: "Cash, Cards, ApplePay, Affirm financing",
+    proAI: "Cash, Cards, ApplePay, Affirm financing",
+    proAIPlus: "Cash, Cards, ApplePay, Affirm financing"
   },
   { 
     name: "SMS & Appointment Reminders",
@@ -32,99 +32,81 @@ export const features: PlanFeature[] = [
     proAIPlus: true
   },
   { 
-    name: "Provider Locator Tool",
-    pro: "Basic",
-    proAI: "Enhanced",
-    proAIPlus: "Premium"
+    name: "Mobile & Studio Services Tools",
+    pro: true,
+    proAI: true,
+    proAIPlus: true
+  },
+  { 
+    name: "Provider Locator Tools",
+    pro: true,
+    proAI: true,
+    proAIPlus: true
   },
   { 
     name: "Automated Scheduling",
-    pro: "Basic",
-    proAI: "AI-Enhanced",
-    proAIPlus: "Advanced AI"
+    pro: true,
+    proAI: true,
+    proAIPlus: true
   },
   { 
-    name: "Client Reviews Management",
-    pro: "Basic",
-    proAI: "Advanced",
-    proAIPlus: "Premium"
+    name: "Client Reviews",
+    pro: true,
+    proAI: true,
+    proAIPlus: true
   },
   { 
     name: "Client Database",
-    pro: "Up to 500 clients",
-    proAI: "Up to 2000 clients",
-    proAIPlus: "Unlimited"
+    pro: true,
+    proAI: true,
+    proAIPlus: true
   },
   { 
-    name: "AI Booking Assistant",
-    pro: false,
-    proAI: "Basic AI Assistant",
-    proAIPlus: "Advanced AI Assistant"
+    name: "Support",
+    pro: true,
+    proAI: true,
+    proAIPlus: true
   },
   { 
-    name: "AI Content Generation",
-    pro: false,
-    proAI: "Basic Templates",
-    proAIPlus: "Custom Content"
-  },
-  { 
-    name: "Lead Qualification",
-    pro: false,
-    proAI: "Standard",
-    proAIPlus: "Advanced"
-  },
-  { 
-    name: "Instagram DM Automation",
-    pro: false,
-    proAI: "Basic Responses",
-    proAIPlus: "Advanced Conversations"
-  },
-  { 
-    name: "Social Media Integration",
-    pro: "Basic",
-    proAI: "Advanced",
-    proAIPlus: "Full Suite"
-  },
-  { 
-    name: "Marketing Tools",
-    pro: "Basic",
-    proAI: "Advanced",
-    proAIPlus: "Premium"
-  },
-  { 
-    name: "24/7 AI Support",
+    name: "Instagram DM AI FAQ Assistant",
     pro: false,
     proAI: true,
     proAIPlus: true
   },
   { 
-    name: "AI Image Generation",
+    name: "Instagram DM AI Lead Qualification",
     pro: false,
-    proAI: "10 Images/month",
+    proAI: false,
+    proAIPlus: true
+  },
+  { 
+    name: "Instagram DM AI Booking Assistant",
+    pro: false,
+    proAI: false,
+    proAIPlus: true
+  },
+  { 
+    name: "Instagram Automatic Post Uploads",
+    pro: false,
+    proAI: false,
+    proAIPlus: "Pictures, Videos, Stories, Posts"
+  },
+  { 
+    name: "Instagram Automatic Captions Generation",
+    pro: false,
+    proAI: false,
+    proAIPlus: "Pictures, Videos, Stories, Posts"
+  },
+  { 
+    name: "AI Content Generation",
+    pro: false,
+    proAI: false,
     proAIPlus: "30 Images/month"
   },
   { 
-    name: "Social Media Management",
+    name: "Instagram Own Image/Video Automation",
     pro: false,
-    proAI: "Basic Suite",
-    proAIPlus: "Full Suite"
-  },
-  { 
-    name: "Analytics & Insights",
-    pro: "Basic Reports",
-    proAI: "Advanced Analytics",
-    proAIPlus: "Premium Insights"
-  },
-  { 
-    name: "Business Intelligence",
-    pro: "Basic",
-    proAI: "Advanced",
-    proAIPlus: "Premium + Custom"
-  },
-  { 
-    name: "Priority Support",
-    pro: false,
-    proAI: "Standard",
-    proAIPlus: "Premium"
+    proAI: false,
+    proAIPlus: "Unlimited"
   }
 ];

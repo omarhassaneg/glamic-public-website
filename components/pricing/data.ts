@@ -3,7 +3,7 @@ import { PricingPlan } from "./types";
 export const pricingPlans: PricingPlan[] = [
   {
     name: "Pro",
-    monthlyPrice: 24.99,
+    monthlyPrice: 25,
     annualPrice: 20,
     features: [
       { name: "Instant Ready-Made Profile & Business Setup" },
@@ -17,32 +17,32 @@ export const pricingPlans: PricingPlan[] = [
   },
   {
     name: "Pro AI",
-    monthlyPrice: 59.99,
+    monthlyPrice: 60,
     annualPrice: 50,
     comingSoon: true,
     features: [
       { name: "Everything in Pro, plus:" },
-      { name: "AI Booking Assistant" },
-      { name: "AI Content Generation" },
-      { name: "Lead Qualification" },
-      { name: "Automated Instagram DM Responses" },
-      { name: "24/7 AI Agent for FAQs & Pricing" },
-      { name: "365 Days AI Support & Assistance" },
+      { name: "Instagram DM AI FAQ Assistant" },
+      { name: "Available 247" },
+      { name: "Scalable AI Assitant" },
+      { name: "Chats like you" },
+      { name: "Take over conversation at anytime" },
+      { name: "Escalates to you non-customer DMs" },
     ]
   },
   {
     name: "Pro AI+",
-    monthlyPrice: 79.99,
+    monthlyPrice: 80,
     annualPrice: 70,
     comingSoon: true,
     features: [
       { name: "Everything in Pro AI, plus:" },
-      { name: "30 Ultra-Realistic AI Image Generations/mo" },
       { name: "Auto-Schedule Social Media Posts" },
-      { name: "AI-Generated Content & Captions" },
-      { name: "Brand-Aligned Content Creation" },
-      { name: "Advanced Analytics & Insights" },
-      { name: "Priority Support & Consultation" },
+      { name: "Own Image/vidoes AI-Generated Captions" },     
+      { name: "30 AI-Generated Images/m & Captions" },
+      { name: "Brand Aligned Content Generation" },
+      { name: "Instagram DM AI Lead Qualification" },
+      { name: "Instagram DM AI Booking Assistant" },
     ]
   },
 ];
