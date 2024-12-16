@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export function FeaturesSection() {
   return (
-    <section className="w-full py-20 bg-background dark:bg-navy">
+    <section id="features-section" className="w-full py-20 bg-background dark:bg-navy">
       <div className="container px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-navy dark:text-white mb-4">

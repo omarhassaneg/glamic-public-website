@@ -1,7 +1,10 @@
+"use client";
+
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { MessageSquare, Clock } from "lucide-react";
 import { ChatWindow } from "@/components/chat/window";
-import Link from "next/link";
+import { WaitlistDialog } from "@/components/common/waitlist/dialog";
 
 const demoMessages = [
   {
@@ -10,7 +13,7 @@ const demoMessages = [
   },
   {
     type: "ai" as const,
-    message: "Hello! I'd be happy to help you book a haircut. To ensure we allocate enough time, could you please let me know:\n\n1. What type of haircut you're looking for?\n2. If you'd like any additional services?\n\nThis helps us provide you with accurate timing and pricing! 💇‍♀️"
+    message: "Hello! I'd be happy to help you book a haircut. To ensure we allocate enough time, could you please let me know:\n\n1. What type of haircut you're looking for?\n2. If you'd like any additional services?\n\nThis helps us provide accurate timing and pricing! 💇‍♀️"
   },
   {
     type: "client" as const,
@@ -23,6 +26,8 @@ const demoMessages = [
 ];
 
 export function AIFeatures() {
+  const [showWaitlist, setShowWaitlist] = useState(false);
+
   return (
     <section className="w-full py-20 bg-navy text-white">
       <div className="container px-4 md:px-6">
@@ -50,11 +55,12 @@ export function AIFeatures() {
               </div>
             </div>
             <div className="pt-4">
-            <Link href="/download">
-              <Button className="w-full bg-gold hover:bg-gold/90 text-white">
-                Get Started
+              <Button 
+                className="w-full bg-gold hover:bg-gold/90 text-white"
+                onClick={() => setShowWaitlist(true)}
+              >
+                Join Waitlist
               </Button>
-              </Link>
             </div>
           </div>
           <div className="flex justify-center items-center">
@@ -62,6 +68,12 @@ export function AIFeatures() {
           </div>
         </div>
       </div>
+
+      <WaitlistDialog
+        isOpen={showWaitlist}
+        onClose={() => setShowWaitlist(false)}
+        title="Join the AI Features Waitlist"
+      />
     </section>
   );
 }

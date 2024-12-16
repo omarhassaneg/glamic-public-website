@@ -2,18 +2,17 @@ export interface WaitlistDialogProps {
   isOpen: boolean;
   onClose: () => void;
   title: string;
-  description?: string;
-  earlyAccess?: {
-    discount: string;
-    description: string;
-  };
 }
 
-export interface WaitlistFormProps {
-  onSubmit: (email: string) => Promise<void>;
-  isSubmitting: boolean;
+export interface FormData {
+  email: string;
+  firstName: string;
 }
 
-export interface SuccessMessageProps {
-  onClose: () => void;
+export interface StepProps {
+  onNext: (value: string) => void;
+  value: string;
+  isSubmitting?: boolean;
 }
+
+export type Step = 'email' | 'name' | 'success';

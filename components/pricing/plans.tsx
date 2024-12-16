@@ -9,7 +9,7 @@ export function PricingPlans() {
   const [billing, setBilling] = useState<"monthly" | "annual">("annual");
 
   return (
-    <section className="w-full py-20 bg-white dark:bg-navy">
+    <section id="pricing-section" className="w-full py-20 bg-white dark:bg-navy">
       <div className="container px-4 md:px-6">
         <div className="text-center space-y-8 mb-12">
           <h2 className="text-3xl font-bold text-navy dark:text-white">

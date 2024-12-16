@@ -8,7 +8,7 @@ import { ChatWindow } from "@/components/chat/window";
 import { FeatureCard } from "@/components/instagram/feature-card";
 import { ComingSoonBadge } from "@/components/ui/coming-soon-badge";
 import { instagramFeatures, chatMessages } from "@/components/instagram/constants";
-import { WaitlistDialog } from "@/components/common/waitlist-dialog";
+import { WaitlistDialog } from "@/components/common/waitlist/dialog";
 
 export function AICommunicationSection() {
   const [showWaitlist, setShowWaitlist] = useState(false);
@@ -70,7 +70,6 @@ export function AICommunicationSection() {
         isOpen={showWaitlist}
         onClose={() => setShowWaitlist(false)}
         title="Join the Instagram AI Integration Waitlist"
-        description="Be the first to transform your Instagram DMs into an automated booking machine. Get early access and exclusive benefits!"
       />
     </section>
   );

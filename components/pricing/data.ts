@@ -28,11 +28,7 @@ export const pricingPlans: PricingPlan[] = [
       { name: "Automated Instagram DM Responses" },
       { name: "24/7 AI Agent for FAQs & Pricing" },
       { name: "365 Days AI Support & Assistance" },
-    ],
-    earlyAccess: {
-      discount: "50% off first year",
-      description: "Limited time early bird offer"
-    }
+    ]
   },
   {
     name: "Pro AI+",
@@ -47,10 +43,6 @@ export const pricingPlans: PricingPlan[] = [
       { name: "Brand-Aligned Content Creation" },
       { name: "Advanced Analytics & Insights" },
       { name: "Priority Support & Consultation" },
-    ],
-    earlyAccess: {
-      discount: "50% off first year",
-      description: "Limited time early bird offer"
-    }
+    ]
   },
 ];

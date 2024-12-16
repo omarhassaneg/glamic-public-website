@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { WaitlistDialog } from "@/components/common/waitlist-dialog";
+import { WaitlistDialog } from "@/components/common/waitlist/dialog";
 
 export function AIContentCTA() {
   const [showWaitlist, setShowWaitlist] = useState(false);
@@ -30,7 +30,6 @@ export function AIContentCTA() {
         isOpen={showWaitlist}
         onClose={() => setShowWaitlist(false)}
         title="Join the AI Content Generation Waitlist"
-        description="Get early access to our AI-powered content creation tools. Transform your social media presence with stunning visuals and engaging captions."
       />
     </motion.div>
   );

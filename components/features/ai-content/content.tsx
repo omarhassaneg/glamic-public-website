@@ -1,9 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Image, Type, Calendar, Wand2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AIFeatureList } from "./feature-list";
+import { WaitlistDialog } from "@/components/common/waitlist/dialog";
 
 const features = [
   {
@@ -29,6 +31,8 @@ const features = [
 ];
 
 export function AIContentContent() {
+  const [showWaitlist, setShowWaitlist] = useState(false);
+
   return (
     <motion.div 
       initial={{ opacity: 0, x: -20 }}
@@ -47,11 +51,17 @@ export function AIContentContent() {
       <div className="pt-4">
         <Button 
           className="w-full bg-gold hover:bg-gold/90 text-white"
-          onClick={() => {}}
+          onClick={() => setShowWaitlist(true)}
         >
           Join Waitlist
         </Button>
       </div>
+
+      <WaitlistDialog
+        isOpen={showWaitlist}
+        onClose={() => setShowWaitlist(false)}
+        title="Join the AI Content Generation Waitlist"
+      />
     </motion.div>
   );
 }

@@ -4,6 +4,13 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 export function FeaturesHero() {
+  const handleExploreClick = () => {
+    const featuresSection = document.getElementById('features-section');
+    if (featuresSection) {
+      featuresSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="w-full pt-40 pb-16 bg-background dark:bg-navy overflow-hidden relative z-0">
       <div className="container px-4 md:px-6 mb-12">
@@ -25,6 +32,7 @@ export function FeaturesHero() {
             <Button
               size="lg"
               className="w-full sm:w-auto bg-navy hover:bg-navy/90 text-white dark:bg-gold dark:hover:bg-gold/90"
+              onClick={handleExploreClick}
             >
               Explore Features
               <ArrowRight className="ml-2 h-5 w-5" />

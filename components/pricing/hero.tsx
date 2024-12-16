@@ -4,6 +4,13 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 export function PricingHero() {
+  const handleViewPricingClick = () => {
+    const pricingSection = document.getElementById('pricing-section');
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="w-full pt-40 pb-16 bg-background dark:bg-navy overflow-hidden relative z-0">
       <div className="container px-4 md:px-6 mb-12">
@@ -22,6 +29,7 @@ export function PricingHero() {
             <Button
               size="lg"
               className="w-full sm:w-auto bg-navy hover:bg-navy/90 text-white dark:bg-gold dark:hover:bg-gold/90"
+              onClick={handleViewPricingClick}
             >
               View Pricing
               <ArrowRight className="ml-2 h-5 w-5" />
