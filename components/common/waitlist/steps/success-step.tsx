@@ -4,10 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import { motion } from "framer-motion";
 import { DialogTitle } from "@/components/ui/dialog";
-
-interface SuccessStepProps {
-  onClose: () => void;
-}
+import { SuccessStepProps } from "../types";
 
 export function SuccessStep({ onClose }: SuccessStepProps) {
   return (

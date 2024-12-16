@@ -15,4 +15,8 @@ export interface StepProps {
   isSubmitting?: boolean;
 }
 
+export interface SuccessStepProps {
+  onClose: () => void;
+}
+
 export type Step = 'email' | 'name' | 'success';
