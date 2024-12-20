@@ -1,8 +1,9 @@
 "use client";
 
 import { MapPin, Clock } from "lucide-react";
+import { Appointment } from "./types";
 
-const appointments = [
+const appointments: Appointment[] = [
   {
     client: "Sarah M.",
     service: "Hair Styling",

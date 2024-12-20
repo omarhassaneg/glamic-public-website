@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
-import { AppointmentList } from "./appointment-list";
-import { AppointmentStats } from "./appointment-stats";
+import { AppointmentList } from "./list";
+import { AppointmentStats } from "./stats";
 
 export function AppointmentDemo() {
   return (

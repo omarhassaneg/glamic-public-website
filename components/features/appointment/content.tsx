@@ -4,9 +4,10 @@ import { motion } from "framer-motion";
 import { Smartphone, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { AppointmentFeatureList } from "./appointment-feature-list";
+import { AppointmentFeatureList } from "./feature-list";
+import { AppointmentFeature } from "./types";
 
-const features = [
+const features: AppointmentFeature[] = [
   {
     icon: Smartphone,
     title: "Mobile Appointments",

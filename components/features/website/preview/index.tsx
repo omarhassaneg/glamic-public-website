@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
-import { PreviewHeader } from "./preview-header";
-import { PreviewContent } from "./preview-content";
+import { PreviewHeader } from "./header";
+import { PreviewContent } from "./content";
 
 export function WebsitePreview() {
   return (

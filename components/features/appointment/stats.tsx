@@ -1,6 +1,8 @@
 "use client";
 
-const stats = [
+import { AppointmentStat } from "./types";
+
+const stats: AppointmentStat[] = [
   { label: "Today's Bookings", value: "8" },
   { label: "Mobile Services", value: "3" },
   { label: "Studio Services", value: "5" }

@@ -5,8 +5,9 @@ import { FileText, Shield, Settings } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { SetupFeature } from "./types";
 
-const features = [
+const features: SetupFeature[] = [
   {
     icon: FileText,
     title: "Preloaded Services",
@@ -26,7 +27,7 @@ const features = [
 
 export function InstantSetup() {
   return (
-    <section className="w-full py-20 bg-white dark:bg-navy">
+    <section id="instant-setup" className="w-full py-20 bg-white dark:bg-navy">
       <div className="container px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div 

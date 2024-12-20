@@ -1,19 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { LucideIcon } from "lucide-react";
+import { AppointmentFeature } from "./types";
 
-interface Feature {
-  icon: LucideIcon;
-  title: string;
-  description: string;
+interface AppointmentFeatureListProps {
+  features: AppointmentFeature[];
 }
 
-interface FeatureListProps {
-  features: Feature[];
-}
-
-export function FeatureList({ features }: FeatureListProps) {
+export function AppointmentFeatureList({ features }: AppointmentFeatureListProps) {
   return (
     <div className="grid gap-6">
       {features.map((feature, index) => (

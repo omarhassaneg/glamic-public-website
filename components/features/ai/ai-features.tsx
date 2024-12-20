@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { MessageSquare, Clock } from "lucide-react";
 import { ChatWindow } from "@/components/chat/window";
 import { WaitlistDialog } from "@/components/common/waitlist/dialog";
+import { AIFeature } from "./types";
 
 const demoMessages = [
   {
@@ -29,7 +30,7 @@ export function AIFeatures() {
   const [showWaitlist, setShowWaitlist] = useState(false);
 
   return (
-    <section className="w-full py-20 bg-navy text-white">
+    <section id="ai-features" className="w-full py-20 bg-navy text-white">
       <div className="container px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
