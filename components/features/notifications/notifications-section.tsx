@@ -1,7 +1,7 @@
 "use client";
 
-import { NotificationsContent } from "./content";
-import { NotificationsDemo } from "./demo";
+import { NotificationsContent } from "./notifications-content";
+import { NotificationsDemo } from "./notifications-demo";
 
 export function NotificationsSection() {
   return (
