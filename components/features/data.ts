@@ -1,9 +1,29 @@
 import { CreditCard, Globe, Bell, Instagram, MapPin, Calendar, Star, ShieldCheck, MessageSquare } from "lucide-react";
-import { Feature } from "./types";
+import { LucideIcon } from "lucide-react";
+
+export const FEATURE_TITLES = {
+  SETUP: "Instant Ready-Made Profile & Business Setup",
+  WEBSITE: "Launch Your Website In Under A Minute",
+  PAYMENT: "Payment and Refund Management",
+  NOTIFICATIONS: "SMS Payments & Appointment Reminders",
+  SOCIAL: "Social Media Integration",
+  LOCATOR: "Provider Locator Tool",
+  AI: "24/7 AI DM Assistant",
+  SCHEDULING: "Automated Scheduling",
+} as const;
+
+export type FeatureTitle = typeof FEATURE_TITLES[keyof typeof FEATURE_TITLES];
+
+export interface Feature {
+  title: FeatureTitle;
+  icon: LucideIcon;
+  details: string[];
+  comingSoon?: boolean;
+}
 
 export const features: Feature[] = [
   {
-    title: "Instant Ready-Made Profile & Business Setup",
+    title: FEATURE_TITLES.SETUP,
     icon: ShieldCheck,
     details: [
       "Preloaded Services: Start with services, prices, and durations tailored to industry standards",
@@ -12,7 +32,7 @@ export const features: Feature[] = [
     ],
   },
   {
-    title: "Launch Your Website In Under A Minute",
+    title: FEATURE_TITLES.WEBSITE,
     icon: Globe,
     details: [
       "Customizable Booking Website: Showcase your brand with a professional, personalized booking page",
@@ -21,7 +41,7 @@ export const features: Feature[] = [
     ],
   },
   {
-    title: "Payment and Refund Management",
+    title: FEATURE_TITLES.PAYMENT,
     icon: CreditCard,
     details: [
       "Secure Payment Processing: Accept cash, cards, Apple Pay, and financing options with Affirm",
@@ -31,7 +51,7 @@ export const features: Feature[] = [
     ],
   },
   {
-    title: "SMS Payments & Appointment Reminders",
+    title: FEATURE_TITLES.NOTIFICATIONS,
     icon: Bell,
     details: [
       "Client Notifications: Send automated SMS or email reminders",
@@ -40,7 +60,7 @@ export const features: Feature[] = [
     ],
   },
   {
-    title: "Social Media Integration",
+    title: FEATURE_TITLES.SOCIAL,
     icon: Instagram,
     comingSoon: true,
     details: [
@@ -50,7 +70,7 @@ export const features: Feature[] = [
     ],    
   },
   {
-    title: "Provider Locator Tool",
+    title: FEATURE_TITLES.LOCATOR,
     icon: MapPin,
     details: [
       "Google Maps Integration: Help clients find your location effortlessly",
@@ -59,7 +79,7 @@ export const features: Feature[] = [
     ],
   },
   {
-    title: "24/7 AI DM Assistant",
+    title: FEATURE_TITLES.AI,
     icon: MessageSquare,
     comingSoon: true,
     details: [
@@ -71,7 +91,7 @@ export const features: Feature[] = [
     ],
   },
   {
-    title: "Automated Scheduling",
+    title: FEATURE_TITLES.SCHEDULING,
     icon: Calendar,
     details: [
       "Online Bookings 24/7: Allow clients to book anytime, eliminating back-and-forth scheduling.",

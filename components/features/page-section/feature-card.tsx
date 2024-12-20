@@ -3,13 +3,7 @@
 import { LucideIcon, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-
-interface Feature {
-  title: string;
-  icon: LucideIcon;
-  details: string[];
-  comingSoon?: boolean;
-}
+import { Feature } from "../data";
 
 interface FeatureCardProps {
   feature: Feature;
