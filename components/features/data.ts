@@ -1,22 +1,5 @@
 import { CreditCard, Globe, Bell, Instagram, MapPin, Calendar, Star, ShieldCheck, MessageSquare } from "lucide-react";
-import { LucideIcon } from "lucide-react";
-
-export type FeatureTitle = 
-  | "Instant Ready-Made Profile & Business Setup"
-  | "Launch Your Website In Under A Minute"
-  | "Payment and Refund Management"
-  | "SMS Payments & Appointment Reminders"
-  | "Social Media Integration"
-  | "Provider Locator Tool"
-  | "24/7 AI DM Assistant"
-  | "Automated Scheduling";
-
-export interface Feature {
-  title: FeatureTitle;
-  icon: LucideIcon;
-  details: string[];
-  comingSoon?: boolean;
-}
+import { Feature } from "./types";
 
 export const features: Feature[] = [
   {
