@@ -1,7 +1,7 @@
 "use client";
 
-import { SchedulingContent } from "./content";
-import { SchedulingDemo } from "./demo";
+import { SchedulingContent } from "./scheduling-content";
+import { SchedulingDemo } from "./scheduling-demo";
 
 export function AutomatedScheduling() {
   return (

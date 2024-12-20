@@ -1,7 +1,7 @@
 "use client";
 
-import { PaymentContent } from "./content";
-import { PaymentDemo } from "./demo";
+import { PaymentContent } from "./payment-content";
+import { PaymentDemo } from "./payment-demo";
 
 export function PaymentManagement() {
   return (

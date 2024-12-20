@@ -1,7 +1,7 @@
 "use client";
 
-import { ProviderLocatorContent } from "./content";
-import { ProviderLocatorDemo } from "./demo";
+import { ProviderLocatorContent } from "./provider-locator-content";
+import { ProviderLocatorDemo } from "./provider-locator-demo";
 
 export function ProviderLocator() {
   return (
