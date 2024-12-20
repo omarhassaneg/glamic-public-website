@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { FeatureCard } from "./feature-card";
 import { features } from "../data";
 
-const sectionIds = {
+const sectionIds: Record<string, string> = {
   "Instant Ready-Made Profile & Business Setup": "instant-setup",
   "Launch Your Website In Under A Minute": "website-builder",
   "Payment and Refund Management": "payment-management",
